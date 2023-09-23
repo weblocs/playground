@@ -1,4 +1,4 @@
-<style>
+
 * {
   box-sizing: border-box;
 }
@@ -295,4 +295,3 @@ div, section, nav, footer, header {
 @media(max-width: 720px) {
 .m_g-24 { gap: 24px; }
   }
-</style>
