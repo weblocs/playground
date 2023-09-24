@@ -216,7 +216,7 @@ div, section, nav, footer, header {
 --header_bottom-space: 64px;
 --section_vert-space: 80px;
 --btn_vert-space: 12px;
---btn_hor-space: 24px;
+--btn_hor-space: 32px;
 --section_how-space: 80px;
 --section_horizontal-space: 80px;
 --h1_bottom-space: 18px;
@@ -243,8 +243,6 @@ div, section, nav, footer, header {
 --card_min-w: 240px;
 --header_bottom-space: 48px;
 --section_vert-space: 60px;
---btn_vert-space: 8px;
---btn_hor-space: 16px;
 --section_how-space: 20px;
 --section_horizontal-space: 20px;
 --h1_bottom-space: 12px;
@@ -270,10 +268,6 @@ div, section, nav, footer, header {
   .pr-btn_hor-space { padding-right: var(--btn_hor-space); }
   .br-btn_radius { border-radius: var(--btn_radius); }
   .b-2-0-0-0 { border: 2px solid rgb(0, 0, 0); }
-  .pt-10 { padding-top: 10px; }
-  .pb-10 { padding-bottom: 10px; }
-  .pl-10 { padding-left: 10px; }
-  .pr-10 { padding-right: 10px; }
   .mxw-520 { max-width: 520px; }
   .g-10 { gap: 10px; }
   .bg-201-201-201 { background-color: rgb(201, 201, 201); }
@@ -281,6 +275,7 @@ div, section, nav, footer, header {
   .h-hero-side-image_height { height: var(--hero-side-image_height); }
   .bg-93-108-240 { background-color: rgb(93, 108, 240); }
   .ta-c { text-align: center ; }
+  .c-255-255-255 { color: rgb(255, 255, 255); }
   .pb-header_bottom-space { padding-bottom: var(--header_bottom-space); }
   .mxw-1000 { max-width: 1000px; }
   .g-grid_gap { gap: var(--grid_gap); }
