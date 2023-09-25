@@ -24,7 +24,7 @@ a {
   text-decoration: none;
 }
 
-div, section, nav, footer, header {
+div, section, nav, footer, header, a {
   display: flex;
   flex-direction: column;
   position: relative;
