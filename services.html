@@ -74,13 +74,13 @@ Explore more</p>
 
     document.querySelectorAll('[trigger="ON_HOVER"]').forEach((node) => {
         node.addEventListener('mouseenter', (e) => {
-          const element = e.target as any;
+          const element = e.target;
           const action = actions.find(({ name }) => name === element.getAttribute('mouseover'));
           element.style.backgroundColor = action.destination.backgroundColor;
           element.style.borderColor = action.destination.borderColor;
         });
         node.addEventListener('mouseleave', (e) => {
-          const element = e.target as any;
+          const element = e.target;
           const action = actions.find(({ name }) => name === element.getAttribute('mouseover'));
           element.style.backgroundColor = action.base.backgroundColor;
           element.style.borderColor = action.base.borderColor;
