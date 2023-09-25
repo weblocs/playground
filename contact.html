@@ -17,16 +17,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
 </style>
         </head><body>
-        <div class="pt-283 pb-283 pl-312 pr-312 ai-c jc-c g-10 bg-255-255-255 fd-r g_w-fl"trigger= action=>
-<div class="ai-c jc-c g-10 fd-r"trigger= action=>
-<h1 class="h1 c-0-0-0 w-583"trigger= action=>
+        <div class="pt-283 pb-283 pl-312 pr-312 ai-c jc-c g-10 bg-255-255-255 fd-r g_w-fl">
+<div class="ai-c jc-c g-10 fd-r">
+<h1 class="h1 c-0-0-0 w-583">
 This is section title</h1>
 </div>
 </div>
 
         
         <script>
-        
+        const actions = [];
+
+    document.querySelectorAll('[trigger="ON_HOVER"]').forEach((node) => {
+        node.addEventListener('mouseenter', (e) => {
+          const element = e.target as any;
+          const action = actions.find(({ name }) => name === element.getAttribute('mouseover'));
+          element.style.backgroundColor = action.destination.backgroundColor;
+          element.style.borderColor = action.destination.borderColor;
+        });
+        node.addEventListener('mouseleave', (e) => {
+          const element = e.target as any;
+          const action = actions.find(({ name }) => name === element.getAttribute('mouseover'));
+          element.style.backgroundColor = action.base.backgroundColor;
+          element.style.borderColor = action.base.borderColor;
+        });
+      });
+    
         </script>
         </body>
         </html>
