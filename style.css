@@ -193,7 +193,7 @@ div, section, nav, footer, header, a {
 .heading {font-size: 60px;}
 }
 @media (max-width: 720px) {
-.h1 {font-size: 48px;}
+.h1 {font-size: 44px;}
 .p-large {font-size: 18px;}
 .btn {font-size: 18px;}
 .p {font-size: 16px;}
@@ -201,7 +201,8 @@ div, section, nav, footer, header, a {
 }
 
   :root {
-    --img-hero: 446px;
+    --dot-size: 12px;
+--img-hero: 446px;
 --btn_radius: 8px;
 --hero-side-image_height: 500px;
 --card_space: 30px;
@@ -234,6 +235,7 @@ div, section, nav, footer, header, a {
 }
 }@media(max-width: 720px) {
 :root {
+--dot-size: 8px;
 --hero-side-image_height: 200px;
 --card_space: 20px;
 --grid_gap: 16px;
@@ -243,6 +245,8 @@ div, section, nav, footer, header, a {
 --card_min-w: 240px;
 --header_bottom-space: 48px;
 --section_vert-space: 54px;
+--btn_vert-space: 8px;
+--btn_hor-space: 24px;
 --section_how-space: 16px;
 --section_horizontal-space: 20px;
 --h1_bottom-space: 12px;
@@ -271,8 +275,8 @@ div, section, nav, footer, header, a {
   .b-2-0-0-0 { border: 2px solid rgb(0, 0, 0); }
   .bg-0-0-0 { background-color: rgb(0, 0, 0); }
   .br-8 { border-radius: 8px; }
-  .w-11 { width: 11px; }
-  .h-11 { height: 11px; }
+  .w-dot-size { width: var(--dot-size); }
+  .h-dot-size { height: var(--dot-size); }
   .mxw-520 { max-width: 520px; }
   .g-10 { gap: 10px; }
   .bg-201-201-201 { background-color: rgb(201, 201, 201); }
